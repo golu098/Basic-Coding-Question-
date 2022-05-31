@@ -3,17 +3,14 @@ Follow on insta id:- real_warrrior_golu(For any query)
 
  Question:-
  Input:-
- 9
+ 5
  Output:-
-1
-23
-345
-4567
-56789
-67891011
-78910111213
-89101112131415
-91011121314151617
+A B C D E
+F G H I J
+K L M N O
+P Q R S T
+U V W X Y
+
  */
 #include <iostream>
 using namespace std;
@@ -22,20 +19,21 @@ int main()
     int n;
     cin >> n;
     int row = 1;
-    // int count = 1; 
+    char count = 'A';
     while (row <= n)
     {
         int col = 1;
-        int value=row;
-        while (col <= row)
+        // char value = row;
+
+        while (col <= n)
         {
-            cout << value;
-value++;
+            
+            cout <<count<<" " ;
+            count++;
             col++;
         }
         cout << endl;
         row++;
     }
-
- 
+    return 0;
 }
